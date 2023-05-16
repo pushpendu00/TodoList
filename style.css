@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(103, 103, 215),rgb(9, 205, 230));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-box{
+    width: 40%;
+    min-height: 200px;
+    padding: 10px;
+    justify-content: center;
+    background-color: white
+}
+
+#todo-box h1{
+    text-align: center;
+    color: rgb(9, 147, 239);
+    border-bottom: 4px solid ;
+}
+#todo-box h3{
+    text-align: center;
+}
+
+#input-box{
+    height:40px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(201, 201, 201);   
+}
+
+/* #input-box img{
+    height: 100%;
+} */
+
+#input-box input{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 20px;
+    background-color: rgb(201, 201, 201);
+}
+
+#add-button{
+    height: 100%;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: rgb(127, 221, 115);
+    cursor: pointer;
+}
+
+
+/* listed items */
+#list-items{
+    width: 100%;
+}
+#list-items li{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#list-items li:hover {
+    background-color: rgb(230, 230, 230);
+}
+#list-items li input{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.close-button-div img:hover{
+    height: 30px;
+    width: 30px;
+}
+.first-level{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+.close-button-div{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 5px; */
+}
+.close-button-div img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+}
+
+
+.content{
+    overflow-x: hidden;
+    width: 80%;
+    font-size: large;
+}
